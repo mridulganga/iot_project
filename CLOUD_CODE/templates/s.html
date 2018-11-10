@@ -1,0 +1,4 @@
+<li> <b> Gas : </b> {{gas}} {% if gas|int > 400 %}<b>THRESHOLD_CROSSED</b>{% endif %} </li>
+<li> <b> LDR : </b> {{ldr}} {% if ldr | int > 600 %}<b>THRESHOLD_CROSSED</b>{% endif %} </li>
+<li> <b> Humidity : </b> {{humidity}} {% if humidity | int > 10 %}<b>THRESHOLD_CROSSED</b>{% endif %} </li>
+<li> <b> Temperature : </b> {{temperature}} {% if temperature | int > 50 %}<b>THRESHOLD_CROSSED</b>{% endif %} </li>

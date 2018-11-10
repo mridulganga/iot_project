@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NOKIA IOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body >
+    <div id="body">
+    <ul>
+        
+    </ul>
+    </div>
+
+    <script src="/static/jq.js"></script>
+    <script>
+        setInterval(function(){
+            console.log("hello");
+            $.get("/s",function(data){
+            //    console.log(data);
+                $("#body").html(data);
+            });
+        },1000);
+        
+    </script>
+</body>
+</html>
